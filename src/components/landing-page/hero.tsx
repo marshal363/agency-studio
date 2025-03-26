@@ -18,10 +18,10 @@ export function Hero() {
 
         <div className="flex flex-col items-center text-center">
           <div className="space-y-4">
-            <h1 className="text-[4rem] leading-[1.15] font-bold tracking-tight sm:text-[5rem] md:text-[5.5rem] text-zinc-700 dark:text-white mx-auto max-w-[12ch]">
+            <h1 className="text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl text-gray-700 dark:text-white mx-auto max-w-[12ch]">
               Premium Websites for<br className="hidden sm:block" /> SaaS & Startups
             </h1>
-            <p className="text-lg text-zinc-500 md:text-xl max-w-2xl mx-auto dark:text-zinc-400 mt-7">
+            <p className="text-2xl font-medium text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mt-6">
               Get a website that will fulfill your business goals and drive conversions.
             </p>
           </div>

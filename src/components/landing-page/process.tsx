@@ -14,7 +14,7 @@ export function Process() {
             <h2 className="text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl text-gray-700 dark:text-gray-300">
               Step by Step
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mt-6">
+            <p className="text-2xl font-medium text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mt-6">
               From the initial proposal to the final product at your hand.<br />
               A clear view of what you can expect at every stage!
             </p>

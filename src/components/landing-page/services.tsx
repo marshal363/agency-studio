@@ -14,8 +14,8 @@ export function Services() {
               That Drive Growth
             </h2>
           </div>
-          <div className="mb-20">
-            <p className="text-xl text-gray-600 dark:text-gray-400">
+          <div className="mb-16">
+            <p className="text-2xl font-medium text-gray-700 dark:text-gray-300">
               Fits best for: Agencies, SaaS, Digital Creators, Businesses, E-Commerce.
             </p>
           </div>
@@ -64,7 +64,7 @@ export function Services() {
                 
                 {/* Bottom part (text content) */}
                 <div className="p-6 bg-white dark:bg-black">
-                  <h3 className="text-2xl font-bold mb-3 text-white dark:text-white">Conversion-Focused Design</h3>
+                  <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Conversion-Focused Design</h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm">
                     Websites so stunning that it will increases your conversion rate by 120%, decrease the bounce-rate and improve engagement.
                   </p>

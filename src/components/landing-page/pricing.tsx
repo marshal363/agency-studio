@@ -17,7 +17,7 @@ export function Pricing() {
             <h2 className="text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl text-gray-700 dark:text-gray-300">
               Pricing for Startups
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mt-6">
+            <p className="text-2xl font-medium text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mt-6">
               No hidden fees or surprises — just flexible plans that grow with your business
             </p>
           </div>

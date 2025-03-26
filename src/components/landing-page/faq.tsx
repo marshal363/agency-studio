@@ -38,7 +38,7 @@ export function FAQ() {
             <h2 className="text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl text-gray-700 dark:text-gray-300">
               questions
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mt-6">
+            <p className="text-2xl font-medium text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mt-6">
               We{"'"}ve gathered the most common questions to make things simple. If you don{"'"}t find your answer here, feel free to reach out!
             </p>
           </div>
