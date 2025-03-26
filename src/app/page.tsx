@@ -1,4 +1,5 @@
 import { Hero } from "@/components/landing-page/hero";
+import { Brands } from "@/components/landing-page/brands";
 import { Services } from "@/components/landing-page/services";
 import { Process } from "@/components/landing-page/process";
 import { Pricing } from "@/components/landing-page/pricing";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Hero />
+      <Brands />
       <Services />
       <Process />
       <Pricing />
