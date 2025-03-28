@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -28,28 +29,30 @@ export function Hero() {
           </div>
           
           <div className="flex flex-col items-center justify-center gap-4 mt-16">
-            <Button 
-              className="bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center gap-3 shadow-[0_2px_8px_rgba(255,87,34,0.25)]" 
-            >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="22" 
-                height="22" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                className="ml-1"
+            <Link href="/book-call">
+              <Button 
+                className="bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center gap-3 shadow-[0_2px_8px_rgba(255,87,34,0.25)]" 
               >
-                <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
-                <line x1="16" x2="16" y1="2" y2="6" />
-                <line x1="8" x2="8" y1="2" y2="6" />
-                <line x1="3" x2="21" y1="10" y2="10" />
-              </svg>
-              Book a 30-min call
-            </Button>
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="22" 
+                  height="22" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  className="ml-1"
+                >
+                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                  <line x1="16" x2="16" y1="2" y2="6" />
+                  <line x1="8" x2="8" y1="2" y2="6" />
+                  <line x1="3" x2="21" y1="10" y2="10" />
+                </svg>
+                Book a 30-min call
+              </Button>
+            </Link>
             
             <div className="flex items-center mt-2">
               <div className="w-[7px] h-[7px] rounded-full bg-[#ff5722] mr-2.5 flex-shrink-0"></div>

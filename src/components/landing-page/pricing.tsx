@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check, Calendar } from "lucide-react";
+import Link from "next/link";
 
 export function Pricing() {
   return (
@@ -45,10 +46,12 @@ export function Pricing() {
                   <div className="text-base text-gray-500">$6,450 with development</div>
                 </div>
 
-                <Button className="w-full bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center justify-center shadow-[0_2px_8px_rgba(255,87,34,0.25)]">
-                  <Calendar className="h-5 w-5 mr-2" />
-                  Book a 30-min call
-                </Button>
+                <Link href="/book-call">
+                  <Button className="w-full bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center justify-center shadow-[0_2px_8px_rgba(255,87,34,0.25)]">
+                    <Calendar className="h-5 w-5 mr-2" />
+                    Book a 30-min call
+                  </Button>
+                </Link>
                 <div className="flex items-center justify-start mb-8">
                   <div className="w-3 h-3 rounded-full bg-[#FF5E3A] mr-2"></div>
                   <span className="text-sm text-gray-500">2 spots available</span>
@@ -109,10 +112,12 @@ export function Pricing() {
                   </div>
 
                   <div className="mt-auto">
-                    <Button className="w-full bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center justify-center shadow-[0_2px_8px_rgba(255,87,34,0.25)]">
-                      <Calendar className="h-5 w-5 mr-2" />
-                      Book a 30-min call
-                    </Button>
+                    <Link href="/book-call">
+                      <Button className="w-full bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center justify-center shadow-[0_2px_8px_rgba(255,87,34,0.25)]">
+                        <Calendar className="h-5 w-5 mr-2" />
+                        Book a 30-min call
+                      </Button>
+                    </Link>
                     <div className="flex items-center justify-start mt-4">
                       <div className="w-3 h-3 rounded-full bg-[#FF5E3A] mr-2"></div>
                       <span className="text-sm text-gray-500">2 spots available</span>
@@ -164,10 +169,12 @@ export function Pricing() {
                   <div className="text-base text-gray-500 mt-1">Based on project scope</div>
                 </div>
 
-                <Button className="w-full bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center justify-center shadow-[0_2px_8px_rgba(255,87,34,0.25)]">
-                  <Calendar className="h-5 w-5 mr-2" />
-                  Book a 30-min call
-                </Button>
+                <Link href="/book-call">
+                  <Button className="w-full bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center justify-center shadow-[0_2px_8px_rgba(255,87,34,0.25)]">
+                    <Calendar className="h-5 w-5 mr-2" />
+                    Book a 30-min call
+                  </Button>
+                </Link>
                 <div className="flex items-center justify-start mb-8">
                   <div className="w-3 h-3 rounded-full bg-[#FF5E3A] mr-2"></div>
                   <span className="text-sm text-gray-500">1 spot available</span>
@@ -225,10 +232,12 @@ export function Pricing() {
                   </div>
 
                   <div className="mt-auto">
-                    <Button className="w-full bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center justify-center shadow-[0_2px_8px_rgba(255,87,34,0.25)]">
-                      <Calendar className="h-5 w-5 mr-2" />
-                      Book a 30-min call
-                    </Button>
+                    <Link href="/book-call">
+                      <Button className="w-full bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center justify-center shadow-[0_2px_8px_rgba(255,87,34,0.25)]">
+                        <Calendar className="h-5 w-5 mr-2" />
+                        Book a 30-min call
+                      </Button>
+                    </Link>
                     <div className="flex items-center justify-start mt-4">
                       <div className="w-3 h-3 rounded-full bg-[#FF5E3A] mr-2"></div>
                       <span className="text-sm text-gray-500">1 spot available</span>

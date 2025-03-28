@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
+import Link from "next/link";
 
 export function CTASection() {
   return (
@@ -15,12 +16,14 @@ export function CTASection() {
             </p>
           </div>
           <div className="flex flex-col gap-4 mt-6">
-            <Button 
-              className="bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center gap-3 shadow-[0_2px_8px_rgba(255,87,34,0.25)]"
-            >
-              <Calendar className="h-5 w-5 ml-1" />
-              Book a 30-min call
-            </Button>
+            <Link href="/book-call">
+              <Button 
+                className="bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center gap-3 shadow-[0_2px_8px_rgba(255,87,34,0.25)]"
+              >
+                <Calendar className="h-5 w-5 ml-1" />
+                Book a 30-min call
+              </Button>
+            </Link>
             
             <div className="flex items-center mt-2">
               <div className="w-[7px] h-[7px] rounded-full bg-[#ff5722] mr-2.5 flex-shrink-0"></div>

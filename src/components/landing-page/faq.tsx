@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { PhoneCall } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 export function FAQ() {
@@ -49,9 +50,11 @@ export function FAQ() {
             </div>
             
             <div className="pt-4">
-              <Button variant="outline" className="gap-2">
-                Any questions? Reach out <PhoneCall className="h-4 w-4" />
-              </Button>
+              <Link href="/book-call">
+                <Button variant="outline" className="gap-2">
+                  Any questions? Reach out <PhoneCall className="h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           </div>
           
