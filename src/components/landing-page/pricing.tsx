@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, Calendar } from "lucide-react";
 
 export function Pricing() {
   return (
@@ -45,7 +45,8 @@ export function Pricing() {
                   <div className="text-base text-gray-500">$6,450 with development</div>
                 </div>
 
-                <Button className="w-full bg-[#FF5E3A] hover:bg-[#FF4425] text-white rounded-full py-6 font-medium text-lg mt-6 mb-4">
+                <Button className="w-full bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center justify-center shadow-[0_2px_8px_rgba(255,87,34,0.25)]">
+                  <Calendar className="h-5 w-5 mr-2" />
                   Book a 30-min call
                 </Button>
                 <div className="flex items-center justify-start mb-8">
@@ -108,7 +109,8 @@ export function Pricing() {
                   </div>
 
                   <div className="mt-auto">
-                    <Button className="w-full bg-[#FF5E3A] hover:bg-[#FF4425] text-white rounded-full py-6 font-medium">
+                    <Button className="w-full bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center justify-center shadow-[0_2px_8px_rgba(255,87,34,0.25)]">
+                      <Calendar className="h-5 w-5 mr-2" />
                       Book a 30-min call
                     </Button>
                     <div className="flex items-center justify-start mt-4">
@@ -162,7 +164,8 @@ export function Pricing() {
                   <div className="text-base text-gray-500 mt-1">Based on project scope</div>
                 </div>
 
-                <Button className="w-full bg-[#FF5E3A] hover:bg-[#FF4425] text-white rounded-full py-6 font-medium text-lg mt-6 mb-4">
+                <Button className="w-full bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center justify-center shadow-[0_2px_8px_rgba(255,87,34,0.25)]">
+                  <Calendar className="h-5 w-5 mr-2" />
                   Book a 30-min call
                 </Button>
                 <div className="flex items-center justify-start mb-8">
@@ -222,7 +225,8 @@ export function Pricing() {
                   </div>
 
                   <div className="mt-auto">
-                    <Button className="w-full bg-[#FF5E3A] hover:bg-[#FF4425] text-white rounded-full py-6 font-medium">
+                    <Button className="w-full bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center justify-center shadow-[0_2px_8px_rgba(255,87,34,0.25)]">
+                      <Calendar className="h-5 w-5 mr-2" />
                       Book a 30-min call
                     </Button>
                     <div className="flex items-center justify-start mt-4">

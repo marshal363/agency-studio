@@ -28,18 +28,18 @@ export function Navbar() {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-10">
-            <Link href="#services" className="text-[15px] font-medium text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors">
+            <a href="#services" className="text-[15px] font-medium text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors">
               Our Services
-            </Link>
-            <Link href="#pricing" className="text-[15px] font-medium text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors">
+            </a>
+            <a href="#pricing" className="text-[15px] font-medium text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors">
               Pricing
-            </Link>
-            <Link href="#faq" className="text-[15px] font-medium text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors">
+            </a>
+            <a href="#faq" className="text-[15px] font-medium text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors">
               FAQ
-            </Link>
-            <Link href="#case-studies" className="text-[15px] font-medium text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors">
+            </a>
+            <a href="#case-studies" className="text-[15px] font-medium text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors">
               Case Studies
-            </Link>
+            </a>
           </nav>
 
           {/* CTA Button */}

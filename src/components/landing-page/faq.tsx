@@ -37,9 +37,7 @@ export function FAQ() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left lg:grid lg:grid-cols-2 gap-10">
           <div className="flex flex-col items-center lg:items-start space-y-6 max-w-3xl">
-            <div className="bg-white dark:bg-gray-800 rounded-full px-6 py-3 shadow-md">
-              <span className="text-gray-700 dark:text-gray-300 text-lg font-medium">FAQ</span>
-            </div>
+           
             
             <div className="space-y-4">
               <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-gray-700 dark:text-gray-300">

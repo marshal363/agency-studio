@@ -14,11 +14,20 @@ export function CTASection() {
               Over 54+ startups trusted us and increased their revenue!
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <Button className="flex items-center gap-2 rounded-full" size="lg">
-              <Calendar className="h-4 w-4" />
+          <div className="flex flex-col gap-4 mt-6">
+            <Button 
+              className="bg-[#ff5722] hover:bg-[#ff5722]/90 text-white rounded-full px-8 py-0 h-[58px] text-[17px] font-medium flex items-center gap-3 shadow-[0_2px_8px_rgba(255,87,34,0.25)]"
+            >
+              <Calendar className="h-5 w-5 ml-1" />
               Book a 30-min call
             </Button>
+            
+            <div className="flex items-center mt-2">
+              <div className="w-[7px] h-[7px] rounded-full bg-[#ff5722] mr-2.5 flex-shrink-0"></div>
+              <p className="text-[15px] text-zinc-400 dark:text-zinc-500">
+                2 spots available
+              </p>
+            </div>
           </div>
           
           <div className="mt-12 pt-6 border-t border-gray-200 dark:border-gray-800 w-full">

@@ -1,75 +1,99 @@
-import React from "react";
+import * as React from "react";
+import Link from "next/link";
+import { Mail, Lock, LayoutGrid } from "lucide-react";
 
 export function Brands() {
   return (
     <section className="w-full py-16 border-b border-gray-100 dark:border-gray-800">
       <div className="container px-4 md:px-6 max-w-7xl mx-auto">
         <div className="flex flex-col items-center gap-12">
-          {/* Top Row - Brand Logos */}
-          <div className="flex items-center justify-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-orange-500"></div>
-            <span className="text-sm text-gray-500 dark:text-gray-400">
-              2 spots available
-            </span>
+          {/* Featured Projects Heading */}
+          <div className="bg-white dark:bg-gray-800 rounded-full px-6 py-3 shadow-md mb-8">
+            <span className="text-gray-700 dark:text-gray-300 text-lg font-medium">Featured Projects</span>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 items-center justify-center opacity-70">
-            {/* We'll use gray-scale logos with consistent styling */}
-            <div className="flex items-center justify-center grayscale">
-              <span className="text-2xl font-light text-gray-400 dark:text-gray-500">Motivation</span>
-            </div>
-            <div className="flex items-center justify-center grayscale">
-              <span className="text-2xl font-light text-gray-400 dark:text-gray-500">dunderfelt</span>
-            </div>
-            <div className="flex items-center justify-center grayscale">
-              <span className="text-xl font-light text-gray-400 dark:text-gray-500">CIIII</span>
-            </div>
-            <div className="flex items-center justify-center grayscale">
-              <span className="text-2xl font-light text-gray-400 dark:text-gray-500">STELLANS</span>
-            </div>
-            <div className="flex items-center justify-center grayscale">
-              <span className="text-2xl font-light text-gray-400 dark:text-gray-500">MARI</span>
-            </div>
-          </div>
-          
-          {/* Case Study Images Row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-6">
-            {/* Email Service Case Study */}
-            <div className="relative rounded-2xl overflow-hidden shadow-lg h-[240px] bg-blue-50 p-6 flex flex-col">
-              <div className="font-medium mb-2">Features you will love.</div>
-              <div className="grid grid-cols-3 gap-4 mt-auto">
-                <div className="bg-blue-100 rounded-lg h-20 flex items-center justify-center">
-                  <div className="w-8 h-8 rounded-md bg-blue-500"></div>
+          {/* Project Cards Row */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+            {/* Email Service Project */}
+            <div className="relative transform transition-all duration-300 hover:-translate-y-2">
+              <Link href="/projects/email-service" className="block h-full">
+                <div className="bg-white dark:bg-gray-800 rounded-[32px] shadow-[0_20px_40px_-5px_rgba(0,0,0,0.25)] p-3 border border-gray-100 dark:border-gray-700 overflow-hidden h-[420px]">
+                  <div className="relative h-full w-full overflow-hidden rounded-[24px] bg-gradient-to-b from-blue-400 to-blue-600 p-6 flex flex-col">
+                    {/* Decorative Circles */}
+                    <div className="absolute top-12 right-12 w-24 h-24 rounded-full bg-blue-500/20"></div>
+                    <div className="absolute top-36 left-8 w-16 h-16 rounded-full bg-blue-300/20"></div>
+                    
+                    {/* Content */}
+                    <div className="flex items-center justify-center grow py-8">
+                      <Mail className="w-20 h-20 text-white/90" strokeWidth={1.5} />
+                    </div>
+                    
+                    <div className="mt-auto">
+                      <h3 className="text-white text-2xl font-bold mb-2">The best email, ever made.</h3>
+                      <p className="text-blue-100 mb-4">Modern email service with advanced features</p>
+                      <div className="flex gap-2">
+                        <span className="px-3 py-1 bg-white/20 rounded-full text-white text-sm">Email</span>
+                        <span className="px-3 py-1 bg-white/20 rounded-full text-white text-sm">SaaS</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="bg-blue-100 rounded-lg h-20 flex items-center justify-center">
-                  <div className="w-8 h-8 rounded-md bg-blue-500"></div>
-                </div>
-                <div className="bg-blue-100 rounded-lg h-20 flex items-center justify-center">
-                  <div className="w-8 h-8 rounded-md bg-blue-500"></div>
-                </div>
-              </div>
+              </Link>
             </div>
             
             {/* Secret Case Study */}
-            <div className="relative rounded-2xl overflow-hidden shadow-lg h-[240px] bg-black p-6 flex flex-col justify-center items-center">
-              <h3 className="text-white text-xl font-semibold mb-4">Stop Being Your Industry&apos;s</h3>
-              <h3 className="text-white text-xl font-semibold mb-2">Best-Kept Secret</h3>
-              <div className="w-full h-28 bg-[rgba(255,255,255,0.1)] rounded-lg mt-4 flex items-center justify-center">
-                <div className="w-16 h-16 rounded-md bg-[rgba(255,255,255,0.2)]"></div>
-              </div>
+            <div className="relative transform transition-all duration-300 hover:-translate-y-2">
+              <Link href="/projects/industry-secret" className="block h-full">
+                <div className="bg-white dark:bg-gray-800 rounded-[32px] shadow-[0_20px_40px_-5px_rgba(0,0,0,0.25)] p-3 border border-gray-100 dark:border-gray-700 overflow-hidden h-[420px]">
+                  <div className="relative h-full w-full overflow-hidden rounded-[24px] bg-gradient-to-b from-gray-700 to-gray-900 p-6 flex flex-col">
+                    {/* Decorative Circles */}
+                    <div className="absolute top-16 right-16 w-28 h-28 rounded-full bg-white/5"></div>
+                    <div className="absolute bottom-40 left-8 w-20 h-20 rounded-full bg-white/5"></div>
+                    
+                    {/* Content */}
+                    <div className="flex items-center justify-center grow py-8">
+                      <Lock className="w-20 h-20 text-white/80" strokeWidth={1.5} />
+                    </div>
+                    
+                    <div className="mt-auto">
+                      <h3 className="text-white text-2xl font-bold mb-1">Stop Being Your Industry&apos;s</h3>
+                      <h4 className="text-white text-xl font-semibold mb-4">Best-Kept Secret</h4>
+                      <div className="flex gap-2">
+                        <span className="px-3 py-1 bg-white/20 rounded-full text-white text-sm">Marketing</span>
+                        <span className="px-3 py-1 bg-white/20 rounded-full text-white text-sm">Brand</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
             </div>
             
             {/* Web3 Case Study */}
-            <div className="relative rounded-2xl overflow-hidden shadow-lg h-[240px] bg-blue-900 p-6 flex flex-col justify-center items-center">
-              <h3 className="text-white text-xl font-semibold mb-1">Bringing Web3</h3>
-              <h3 className="text-white text-xl font-semibold mb-4">To The World</h3>
-              <div className="w-full h-28 mt-4 flex items-center justify-center">
-                <div className="relative w-full h-full">
-                  <div className="absolute bottom-0 left-0 right-0 h-16 bg-blue-700 rounded-lg"></div>
-                  <div className="absolute bottom-8 left-1/4 w-12 h-12 bg-blue-500 rounded-md"></div>
-                  <div className="absolute bottom-8 right-1/4 w-12 h-12 bg-blue-500 rounded-md"></div>
+            <div className="relative transform transition-all duration-300 hover:-translate-y-2">
+              <Link href="/projects/web3-world" className="block h-full">
+                <div className="bg-white dark:bg-gray-800 rounded-[32px] shadow-[0_20px_40px_-5px_rgba(0,0,0,0.25)] p-3 border border-gray-100 dark:border-gray-700 overflow-hidden h-[420px]">
+                  <div className="relative h-full w-full overflow-hidden rounded-[24px] bg-gradient-to-b from-blue-800 to-blue-950 p-6 flex flex-col">
+                    {/* Decorative Circles */}
+                    <div className="absolute top-10 right-10 w-20 h-20 rounded-full bg-blue-500/20"></div>
+                    <div className="absolute bottom-40 left-8 w-16 h-16 rounded-full bg-blue-400/20"></div>
+                    <div className="absolute top-36 left-12 w-12 h-12 rounded-full bg-blue-300/20"></div>
+                    
+                    {/* Content */}
+                    <div className="flex items-center justify-center grow py-8">
+                      <LayoutGrid className="w-20 h-20 text-blue-200/90" strokeWidth={1.5} />
+                    </div>
+                    
+                    <div className="mt-auto">
+                      <h3 className="text-white text-2xl font-bold mb-1">Bringing Web3</h3>
+                      <h4 className="text-white text-xl font-semibold mb-4">To The World</h4>
+                      <div className="flex gap-2">
+                        <span className="px-3 py-1 bg-white/20 rounded-full text-white text-sm">Web3</span>
+                        <span className="px-3 py-1 bg-white/20 rounded-full text-white text-sm">Blockchain</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
