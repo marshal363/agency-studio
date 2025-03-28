@@ -1,25 +1,9 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
-import { MeetingInfo } from '@/components/meeting-info';
-import { CalendarSelector } from '@/components/calendar-selector';
-import { BookingConfirmation } from '@/components/booking-confirmation';
+import { CalEmbed } from '@/components/cal-embed';
 
 export default function BookCallPage() {
-  const [selectedDate, setSelectedDate] = useState<Date | null>(null);
-  const [selectedTime, setSelectedTime] = useState<string | null>(null);
-  const [showConfirmation, setShowConfirmation] = useState(false);
-  
-  const handleDateSelected = (date: Date) => {
-    setSelectedDate(date);
-  };
-  
-  const handleTimeSelected = (time: string) => {
-    setSelectedTime(time);
-    setShowConfirmation(true);
-  };
-  
   return (
     <div className="flex flex-col items-center justify-center px-4 py-16 mx-auto max-w-6xl min-h-screen bg-gradient-to-b from-white to-gray-50">
       <div className="relative flex items-center justify-center py-4 mb-16">
@@ -48,34 +32,11 @@ export default function BookCallPage() {
         <Link href="#" className="text-green-500 underline font-medium">WhatsApp</Link>
       </p>
 
-      <div className="flex flex-col md:flex-row items-stretch p-0 bg-white rounded-xl shadow-xl overflow-hidden w-full max-w-4xl border border-gray-100">
-        <div className="w-full md:w-1/3 border-b md:border-b-0 md:border-r border-gray-200">
-          <MeetingInfo 
-            title="Skale Solutions Intro"
-            organization="Skale.solutions"
-            duration="30 mins"
-            details={[
-              "Share formal intro&apos;s",
-              "Share our work & process",
-              "Learn about your project & business goals"
-            ]}
-          />
-        </div>
-
-        <div className="w-full md:w-2/3">
-          {showConfirmation ? (
-            <BookingConfirmation 
-              selectedDate={selectedDate}
-              selectedTime={selectedTime}
-              meetingTitle="Skale Solutions Intro"
-            />
-          ) : (
-            <CalendarSelector 
-              onDateSelected={handleDateSelected}
-              onTimeSelected={handleTimeSelected}
-            />
-          )}
-        </div>
+      <div className="bg-white rounded-xl shadow-xl overflow-hidden w-full max-w-4xl border border-gray-100">
+        {/* Cal.com embed component - now using full width */}
+        <CalEmbed 
+          className="h-[600px]"
+        />
       </div>
       
       <div className="flex items-center justify-center mt-10">
